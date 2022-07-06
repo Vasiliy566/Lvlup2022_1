@@ -52,11 +52,9 @@ Output:
 #### Пример 1
 Input:
     
-    Implement a command line utility, that can be 
-    invoked in common Linux operating systems
+    Implement a command line utility, that can be invoked in common Linux operating systems
     
 Output:
     
-    Реализация утилиты командной строки, которая может быть
-    вызвана в распространенных операционных системах Linux
+    Реализация утилиты командной строки, которая может быть вызвана в распространенных операционных системах Linux
 
