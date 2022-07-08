@@ -1,6 +1,6 @@
 my_list = ['p', 'r', 'o', 'b', 'e']
-#           0    1    2    3    4
-#          -5    -4   -3   -2  -1
+#           0    1    2    3    example_test
+#          -5    -example_test   -3   -2  -1
 print(my_list[0])  # p
 
 print(my_list[-1])

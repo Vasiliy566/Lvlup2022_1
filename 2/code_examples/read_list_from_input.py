@@ -6,3 +6,7 @@ for i in range(len(a)):
 
 # Однострочный
 l = [int(x) for x in input().split()]
+
+l = []
+for x in input().split():
+    l.append(int(x))
