@@ -1,7 +1,7 @@
 # Задачка 1.
 
 Написать функцию принимающую три агрумента - коэффициенты A, B и C квадратного уравнения 
-![function1]([http://latex.codecogs.com/svg.latex?x%5E%7B2%7D](https://latex.codecogs.com/svg.image?A%20*%20x^{2}%20+%20B%20*%20x%20+%20C%20=%200))
+![function1](https://latex.codecogs.com/svg.image?A&space;*&space;x^{2}&space;&plus;&space;B&space;*&space;x&space;&plus;&space;C&space;=&space;0)
 <!-- A * x^{2} + B * x + C = 0 -->
 * функция должна выводить действительные корни квадратного уравнения 
 
