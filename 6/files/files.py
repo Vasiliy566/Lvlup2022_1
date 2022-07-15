@@ -8,12 +8,12 @@
 #     data = [line for line in f]
 #
 # print(data)
-file_path = "data/example.txt"
+file_path = "../data/example.txt"
 
 with open(file_path, mode="a", encoding="utf8") as f:
     f.write("Тест пример\n")
     f.write("Тест пример\n")
 
-with open("data/example.txt", mode="r", encoding="utf8") as f:
+with open("../data/example.txt", mode="r", encoding="utf8") as f:
     for line in f:
         print(line)
