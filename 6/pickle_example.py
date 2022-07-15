@@ -1,11 +1,10 @@
 import pickle
-
-data = [123, "test", [1, 2, 3]]
-
-with open('important', 'wb') as file:
+#
+data = set([x for x in range(123)])
+print(data)
+with open('important.pickle', 'wb') as file:
     pickle.dump(data, file)
 
-
-with open('important', 'rb') as file:
+with open('important.pickle', 'rb') as file:
     data = pickle.load(file)
     print(data)
