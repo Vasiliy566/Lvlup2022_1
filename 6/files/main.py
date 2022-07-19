@@ -1,14 +1,17 @@
-import json
-import pickle
-from datetime import datetime
+import matplotlib.pyplot as plt
 
-if __name__ == "__main__":
-    q1 = input("5 + 3 = ")
-    q2 = input("5 + 5 = ")
-    q3 = input("5 + 8 = ")
 
-    data = {"now": str(datetime.now()), "q1": q1, "q2": q2, "q3": q3}
+def f(x, a, b, c):
+    return (a * x ** 2) + (b * x) + c
 
-    with open('quiz_data.json', "wb") as json_file:
-        pickle.dump(data, json_file)
 
+a, b, c = 1, 2, -3
+
+x_coords = [x for x in range(-10, 10, 1)]
+
+y_coords = []
+for x in x_coords:
+    y_coords.append(f(x, a, b, c))
+
+plt.plot(x_coords, y_coords)
+plt.show()
