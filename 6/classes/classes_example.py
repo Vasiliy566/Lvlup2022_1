@@ -1,4 +1,4 @@
-class Transport:
+class Car:
     def __init__(self, color, year):
         self.color = color
         self.year = year
@@ -6,20 +6,6 @@ class Transport:
 
     def trip(self, distance):
         self.mileage += distance
-
-
-class Bus(Transport):
-    def is_we_need_tech(self):
-        if self.mileage >= 3000:
-            print("Срочно нужно то!")
-        elif self.mileage > 3000:
-            print(f"ТО через {10000 - self.mileage} км")
-        else:
-            print("все ок")
-
-
-class Car(Transport):
-    ...
 
     def is_we_need_tech(self):
         if self.mileage >= 10000:
