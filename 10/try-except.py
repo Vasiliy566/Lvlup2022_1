@@ -1,12 +1,19 @@
+f1 = input()
+f2 = input()
+
+
 try:
-    f = open("test1.txt")
-    print(f.readlines())
+    f1 = open(f1)
+    f2 = open(f2, mode="w")
 except FileNotFoundError:
-    print("Не могу найти файл test.txt")
+    print("Файл не найден")
 else:
-    print(f.readlines())
-finally:
-    print("Все закончилось.")
+    lines = f1.readlines()
+    for line in lines:
+        if not line.startswith("#"):
+            f2.write(line)
+    f1.close()
+    f2.close()
 
 
 # else:
