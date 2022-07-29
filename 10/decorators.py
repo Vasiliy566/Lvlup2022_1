@@ -1,6 +1,16 @@
 from datetime import datetime
 
 
+def no_error(decorate_f):
+    def wrapper(*args, **kwargs):
+        try:
+            decorate_f(*args, **kwargs)
+        except Exception:
+            print("Error")
+
+    return wrapper
+
+
 def how_long_it_runs(decorate_f):
     def wrapper(*args, **kwargs):
         now = datetime.now()
@@ -12,6 +22,7 @@ def how_long_it_runs(decorate_f):
 
 
 @how_long_it_runs
+@no_error
 def f(a, b, c):
     for i in range(100000):
         s = a + b + c
@@ -19,11 +30,13 @@ def f(a, b, c):
 
 
 @how_long_it_runs
+@no_error
 def f1(a, b, c):
     print(a * b * c)
 
 
 @how_long_it_runs
+@no_error
 def f2(a, b, c):
     print(a ** b ** c)
 
