@@ -1,3 +1,11 @@
+# Вариант со вводом n
+n = int(input())
+my_list = []
+for i in range(n):
+    number = int(input())
+    my_list.append(number)
+
+
 # Длинный вариант
 a = input().split()
 l = []
@@ -7,6 +15,3 @@ for i in range(len(a)):
 # Однострочный
 l = [int(x) for x in input().split()]
 
-l = []
-for x in input().split():
-    l.append(int(x))
