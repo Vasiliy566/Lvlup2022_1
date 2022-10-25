@@ -10,7 +10,7 @@
 # print(data)
 file_path = "../data/example.txt"
 
-with open(file_path, mode="a", encoding="utf8") as f:
+with open(file_path, mode="w", encoding="utf8") as f:
     f.write("Тест пример\n")
     f.write("Тест пример\n")
 
